@@ -1,0 +1,77 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Page layout helpers
+.page-title {
+  font-family: $font-title;
+  font-size: 2rem;
+  color: $color-primary-dark;
+  text-align: center;
+  margin-bottom: $spacing-lg;
+  padding-top: $spacing-lg;
+}
+
+.sub-title {
+  font-family: $font-title;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: $color-primary-dark;
+  margin: $spacing-md 0 $spacing-sm;
+}
+
+.content {
+  background: $color-surface;
+  border-radius: $radius-md;
+  padding: $spacing-lg;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: $shadow-sm;
+
+  p {
+    margin-bottom: $spacing-sm;
+    text-align: justify;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-sm;
+}
