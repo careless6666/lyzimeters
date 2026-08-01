@@ -1,0 +1,39 @@
+// Font families
+$font-title: 'EB Garamond', serif;
+$font-body: 'EB Garamond', Georgia, serif;
+
+// Colors
+$color-bg: #fbf8cf;
+$color-surface: #ffffff;
+$color-primary: #4a7c3f;
+$color-primary-dark: #2d5a2d;
+$color-primary-light: #6b9b5a;
+$color-text: #333333;
+$color-text-light: #666666;
+$color-accent: #8bc34a;
+
+// Navigation
+$nav-height: 70px;
+$nav-bg-start: #4a7c3f;
+$nav-bg-end: #2d5a2d;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Border radius
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-mobile: 480px;
