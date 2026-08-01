@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const base = import.meta.env.BASE_URL
 const isMenuOpen = ref(false)
 
 const navLinks = [
@@ -20,7 +21,7 @@ function closeMenu() {
   <nav class="nav">
     <div class="nav__inner">
       <router-link to="/" class="nav__logo" @click="closeMenu">
-        <img src="/img/logo.png" alt="Логотип" class="nav__logo-img" />
+        <img :src="`${base}img/logo.png`" alt="Логотип" class="nav__logo-img" />
         <span class="nav__logo-text">Лизиметрическая станция МГУ</span>
       </router-link>
 

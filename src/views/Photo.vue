@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const base = import.meta.env.BASE_URL
+
 const photos = [
-  { src: '/img/staczim.jpeg', alt: 'Лизиметрическая станция' },
-  { src: '/img/МГУ_Старые_теплицы.jpg', alt: 'Старые теплицы МГУ' },
-  { src: '/img/facgz4.jpg', alt: 'Факультет почвоведения' },
+  { src: `${base}img/staczim.jpeg`, alt: 'Лизиметрическая станция' },
+  { src: `${base}img/МГУ_Старые_теплицы.jpg`, alt: 'Старые теплицы МГУ' },
+  { src: `${base}img/facgz4.jpg`, alt: 'Факультет почвоведения' },
 ]
 
 const current = ref(0)
