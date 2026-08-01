@@ -1,32 +1,34 @@
 <script setup lang="ts">
+const base = import.meta.env.BASE_URL
+
 const directions = [
   {
-    icon: '/img/monitoring.svg',
+    icon: `${base}img/monitoring.svg`,
     title: 'Мониторинг почв',
     text: 'Систематические наблюдения за состоянием почвенного покрова и динамикой почвенных процессов.',
   },
   {
-    icon: '/img/digging.svg',
+    icon: `${base}img/digging.svg`,
     title: 'Режимные исследования',
     text: 'Изучение температурного, водного и воздушного режимов почв в естественных условиях.',
   },
   {
-    icon: '/img/water-drop.svg',
+    icon: `${base}img/water-drop.svg`,
     title: 'Миграция веществ',
     text: 'Исследование перемещения растворённых веществ и элементов питания по почвенному профилю.',
   },
   {
-    icon: '/img/agriculture.svg',
+    icon: `${base}img/agriculture.svg`,
     title: 'Агрофизические и агрохимические исследования',
     text: 'Определение физико-химических свойств почв и их изменения под воздействием различных факторов.',
   },
   {
-    icon: '/img/bacteria.svg',
+    icon: `${base}img/bacteria.svg`,
     title: 'Микробиологические исследования',
     text: 'Изучение почвенной микробиоты и её роли в процессах трансформации органического вещества.',
   },
   {
-    icon: '/img/line-graph.svg',
+    icon: `${base}img/line-graph.svg`,
     title: 'Математическое моделирование',
     text: 'Построение моделей почвенных процессов для прогнозирования и оптимизации управления плодородием.',
   },

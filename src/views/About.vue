@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const base = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -13,7 +14,7 @@
         процессов миграции веществ в почвенном профиле.
       </p>
 
-      <img src="/img/history.jpg" alt="История станции" class="about__img" />
+      <img :src="`${base}img/history.jpg`" alt="История станции" class="about__img" />
 
       <h2 class="sub-title">История создания</h2>
       <p>
@@ -34,7 +35,7 @@
         в естественных условиях.
       </p>
 
-      <img src="/img/soils.jpg" alt="Типы почв" class="about__img" />
+      <img :src="`${base}img/soils.jpg`" alt="Типы почв" class="about__img" />
 
       <h2 class="sub-title">Типы почв</h2>
       <p>

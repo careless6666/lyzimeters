@@ -1,8 +1,10 @@
 <script setup lang="ts">
+const base = import.meta.env.BASE_URL
+const heroBg = `${base}img/grass.jpg`
 </script>
 
 <template>
-  <section class="hero">
+  <section class="hero" :style="{ backgroundImage: `url(${heroBg})` }">
     <div class="hero__overlay">
       <div class="hero__content">
         <h1 class="hero__title">Лизиметрическая станция<br />почвенного стационара МГУ</h1>
@@ -19,7 +21,10 @@
 .hero {
   position: relative;
   min-height: calc(100vh - 70px);
-  background: url('/img/grass.jpg') center / cover no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
