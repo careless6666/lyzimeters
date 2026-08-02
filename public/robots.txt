@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msu-soil-station.com/sitemap.xml
