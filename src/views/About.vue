@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL
   <div class="container">
     <h1 class="page-title">О лизиметрах</h1>
 
-    <div class="content">
+    <div class="content" v-reveal="'fade-up'">
       <p>
         Лизиметрическая станция почвенного стационара МГУ имени М.В. Ломоносова
         была создана в 1960 году по инициативе профессора Н.А. Качинского.
@@ -14,9 +14,9 @@ const base = import.meta.env.BASE_URL
         процессов миграции веществ в почвенном профиле.
       </p>
 
-      <img :src="`${base}img/history.jpg`" alt="История станции" class="about__img" />
+      <img :src="`${base}img/history.jpg`" alt="История станции" class="about__img" v-reveal="'scale'" />
 
-      <h2 class="sub-title">История создания</h2>
+      <h2 class="sub-title" v-reveal="'fade-up'">История создания</h2>
       <p>
         Лизиметры были заложены в 1960 году на территории почвенного стационара
         факультета почвоведения МГУ. Инициатором создания станции стал
@@ -26,7 +26,7 @@ const base = import.meta.env.BASE_URL
         процессами.
       </p>
 
-      <h2 class="sub-title">Конструкция лизиметров</h2>
+      <h2 class="sub-title" v-reveal="'fade-up'">Конструкция лизиметров</h2>
       <p>
         Лизиметры представляют собой монолиты почвы ненарушенного сложения,
         помещённые в специальные бетонные конструкции. Каждый лизиметр
@@ -35,9 +35,9 @@ const base = import.meta.env.BASE_URL
         в естественных условиях.
       </p>
 
-      <img :src="`${base}img/soils.jpg`" alt="Типы почв" class="about__img" />
+      <img :src="`${base}img/soils.jpg`" alt="Типы почв" class="about__img" v-reveal="'scale'" />
 
-      <h2 class="sub-title">Типы почв</h2>
+      <h2 class="sub-title" v-reveal="'fade-up'">Типы почв</h2>
       <p>
         На станции представлены основные типы почв, характерные для умеренного
         климатического пояса: дерново-подзолистые, серые лесные, чернозёмы и
@@ -46,7 +46,7 @@ const base = import.meta.env.BASE_URL
         исследований.
       </p>
 
-      <h2 class="sub-title">Мелиоративная обработка</h2>
+      <h2 class="sub-title" v-reveal="'fade-up'">Мелиоративная обработка</h2>
       <p>
         Часть лизиметров подверглась различным видам мелиоративной обработки
         для изучения влияния агротехнических приёмов на водно-солевой режим

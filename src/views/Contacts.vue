@@ -6,7 +6,7 @@
     <h1 class="page-title">Контакты</h1>
 
     <div class="content contacts">
-      <div class="contacts__info">
+      <div class="contacts__info" v-reveal="'fade-up'">
         <h2 class="sub-title">Адрес</h2>
         <p>Россия, Москва, ул. Ленинские горы, 1</p>
         <p>МГУ имени М.В. Ломоносова, факультет почвоведения</p>
@@ -22,7 +22,7 @@
         </p>
       </div>
 
-      <div class="contacts__map">
+      <div class="contacts__map" v-reveal="'fade-up'" :data-reveal-delay="200">
         <iframe
           src="https://yandex.ru/map-widget/v1/?ll=37.530887%2C55.703282&z=15"
           width="100%"
