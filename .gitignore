@@ -62,7 +62,6 @@ coverage/
 
 # CI/CD
 .circleci/
-.github/
 
 # Документация
 docs/_build/
