@@ -40,7 +40,7 @@ const directions = [
     <h1 class="page-title">Направления исследований</h1>
 
     <div class="research">
-      <div v-for="(d, i) in directions" :key="i" class="research__card">
+      <div v-for="(d, i) in directions" :key="i" class="research__card" v-reveal="i * 100">
         <div class="research__icon">
           <img :src="d.icon" :alt="d.title" />
         </div>

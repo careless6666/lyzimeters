@@ -75,3 +75,89 @@ img {
   margin: 0 auto;
   padding: $spacing-lg $spacing-sm;
 }
+
+// ── Scroll-reveal animations ──────────────────────────
+.reveal {
+  opacity: 0;
+  transition: opacity 0.6s $ease-out-expo, transform 0.6s $ease-out-expo;
+  will-change: opacity, transform;
+}
+
+.reveal--fade-up {
+  transform: translateY(40px);
+}
+
+.reveal--fade {
+  transform: none;
+}
+
+.reveal--scale {
+  transform: scale(0.92);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+// ── Page transition (router-view) ──────────────────────
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.35s $ease-out-expo, transform 0.35s $ease-out-expo;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+// ── Scroll progress bar ───────────────────────────────
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: $color-primary;
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+// ── Back-to-top button ────────────────────────────────
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: $color-primary;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow-md;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity $transition-normal, visibility $transition-normal, transform $transition-normal, background $transition-fast;
+  z-index: 9998;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    background: $color-primary-dark;
+    transform: translateY(-3px);
+  }
+}
